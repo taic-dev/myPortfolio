@@ -1,6 +1,6 @@
 import * as React from "react";
-import Main from "../templates/main";
-import Sidebar from "../templates/sidebar";
+import Main from "./main";
+import Sidebar from "./sidebar";
 
 const Layout = () => {
   return (

@@ -1,0 +1,11 @@
+.headline {
+  h2 {
+      font-size: clamp(20px , 5.3vw , 40px);
+  }
+
+  span{
+      display: block;
+      font-weight: bold;
+      margin: 15px 0 20px 0;
+  }
+}
