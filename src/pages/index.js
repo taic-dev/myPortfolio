@@ -1,13 +1,16 @@
-import * as React from "react"
+import * as React from "react";
+import Layout from "../components/views/layout"
+import Sidebar from "../components/templates/sidebar";
 
 const IndexPage = () => {
+  // ドキュメント風のポートフォリオサイトにする
   return (
-    <section>
+    <Layout>
       
-    </section>
-  )
-}
+    </Layout>
+  );
+};
 
-export default IndexPage
+export default IndexPage;
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => <title>Home Page</title>;

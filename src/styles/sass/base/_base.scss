@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 150px;
+}
+
+.main {
+  max-width: 75%;
+  width: 100%;
+  margin: 0 0 0 auto;
+}
+
+.sidebar {
+  position: fixed;
+  top: 100px;
+  max-width: 15%;
+
+  img {
+    width: 100%;
+  }
+}
