@@ -7,8 +7,8 @@ import Works from "../templates/works";
 
 const Main = () => {
   return (
-    <div className="main">
-      <main>
+    <div className="top">
+      <main className="main">
         <Fv></Fv>
         <About></About>
         <Skill></Skill>

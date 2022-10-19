@@ -1,11 +1,36 @@
-.headline {
-  h2 {
-      font-size: clamp(20px , 5.3vw , 40px);
-  }
+.top {
+  .headline {
+    h2 {
+      font-size: clamp(20px, 5.3vw, 40px);
+    }
 
-  span{
+    span {
       display: block;
       font-weight: bold;
-      margin: 15px 0 20px 0;
+      margin: 15px 0 40px 0;
+    }
+  }
+
+  .content {
+    margin-left: 50px;
+
+    h3 {
+      position: relative;
+      font-size: 30px;
+      margin-bottom: 30px;
+
+      &::before {
+        position: absolute;
+        top: 50%;
+        left: -25px;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        width: 20px;
+        height: 3px;
+        background: #000;
+        border-radius: 5px;
+        content: "";
+      }
+    }
   }
 }

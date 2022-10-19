@@ -1,3 +1,23 @@
-.about{
-    
+.about {
+  &__table {
+    tbody {
+      &:last-child tr {
+        td:last-child {
+          padding: 0 0 0 30px;
+        }
+      }
+      tr {
+        display: flex;
+        align-items: center;
+      }
+      td {
+        font-size: 20px;
+        padding: 30px 50px 30px 0;
+
+        &:first-child {
+          width: 125px;
+        }
+      }
+    }
+  }
 }
