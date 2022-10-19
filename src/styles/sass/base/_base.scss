@@ -1,5 +1,5 @@
-p{
-    line-height: 1.5;
+p {
+  line-height: 1.5;
 }
 
 .wrapper {
@@ -9,14 +9,18 @@ p{
   padding-top: 150px;
 }
 
-.main {
+.top {
   max-width: calc(95% - 250px);
   width: 100%;
   margin: 0 0 0 auto;
 
-  section{
-      margin-bottom: 50px;
+  section {
+    margin-bottom: 50px;
   }
+}
+
+.main {
+  margin-right: 15px;
 }
 
 .sidebar {
@@ -40,5 +44,21 @@ p{
   nav {
     padding: 15px;
     text-align: left;
+
+    ol {
+      counter-reset: count 0;
+      padding: 50px 0 0 50px;
+
+      li{
+          font-size: 20px;
+          width: fit-content;
+          margin-bottom: 25px;
+      }
+
+      li:before {
+        content: counter(count) ". ";
+        counter-increment: count 1;
+      }
+    }
   }
 }
