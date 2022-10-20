@@ -1,5 +1,7 @@
 import * as React from "react";
 import * as Styles from "../../styles/sass/module/_skill.module.scss";
+// prism
+import "prismjs/themes/prism-tomorrow.css";
 
 const Skill = () => {
   return (
@@ -9,7 +11,10 @@ const Skill = () => {
         <span>スキルセット</span>
       </div>
       <div className="content">
-          <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+
+        <p>
+          テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+        </p>
       </div>
     </section>
   );
