@@ -1,0 +1,20 @@
+.works{
+    &__list{
+        margin-bottom: 50px;
+    }
+
+    &__item{
+
+        h4{
+            margin: 15px 0;
+        }
+
+        img{
+            width: 100%;
+        }
+        span{
+            display: block;
+            margin: 15px 0;
+        }
+    }
+}
