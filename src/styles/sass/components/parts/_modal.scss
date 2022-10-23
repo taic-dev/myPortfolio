@@ -1,0 +1,144 @@
+// modal.scss
+.overlay {
+    &__base {
+      padding: 1rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+  
+      background-color: transparent;
+      opacity: 0;
+      transition-property: background-color, opacity;
+      transition-duration: 500ms;
+      transition-timing-function: ease;
+      outline: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    &__after {
+      background-color: rgba(81, 81, 81, 0.85);
+      opacity: 1;
+      z-index: 2;
+    }
+  
+    &__before {
+      background-color: transparent;
+      opacity: 0;
+    }
+  }
+  
+  .content {
+    &__base {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border-radius: 5px;
+  
+      padding: 4.5rem;
+      
+      transform: translate(-50%, -40%);
+  
+      background-color: transparent;
+      transition-property: background-color, transform;
+      transition-duration: 500ms;
+      transition-timing-function: ease;
+    }
+  
+    &__after {
+      width: 70%;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+    }
+  
+    &__before {
+      transform: translate(-50%, -40%);
+      background-color: transparent;
+    }
+  
+    &__wrapper {
+      position: relative;
+      width: 70%;
+      height: 100%;
+      margin: auto;
+  
+      div{
+          position: absolute;
+          top: 0;
+          right: 0;
+          cursor: pointer;
+  
+          span{
+              position: relative;
+              &::before{
+                  position: absolute;
+                  width: 20px;
+                  height: 3px;
+                  background: #000;
+                  transform: rotate(-45deg);
+                  content: "";
+              }
+  
+              &::after{
+                  position: absolute;
+                  width: 20px;
+                  height: 3px;
+                  background: #000;
+                  transform: rotate(45deg);
+                  content: "";
+              }
+          }
+      }
+  
+      a {
+        display: block;
+        text-align: center;
+        display: block;
+        width: 65%;
+        margin: auto;
+        padding: 15px;
+        border: solid 3px;
+        border-radius: 30px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+  
+    &__title {
+      text-align: center;
+      font-size: 30px;
+    }
+  
+    &__price {
+      width: 100%;
+      margin: 10% 0 6% 0;
+  
+      thead {
+        border-bottom: 2px solid #000;
+      }
+  
+      th {
+        width: 50%;
+        font-size: 25px;
+        padding-bottom: 20px;
+      }
+  
+      td {
+        padding: 3%;
+        text-align: center;
+  
+        p {
+          margin-top: 20px;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+  

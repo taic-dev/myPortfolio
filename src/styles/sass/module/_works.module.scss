@@ -1,20 +1,28 @@
-.works{
-    &__list{
-        margin-bottom: 50px;
+.works {
+  &__list {
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    img {
+      width: 100%;
+    }
+  }
+
+  &__desc {
+    h4 {
+      font-size: 18px;
+      margin: 15px 0;
     }
 
-    &__item{
-
-        h4{
-            margin: 15px 0;
-        }
-
-        img{
-            width: 100%;
-        }
-        span{
-            display: block;
-            margin: 15px 0;
-        }
+    p {
+      font-size: 15px;
     }
+
+    span {
+      font-size: 13px;
+      display: block;
+      margin: 15px 0;
+    }
+  }
 }
