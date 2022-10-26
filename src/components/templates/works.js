@@ -75,11 +75,30 @@ const Works = () => {
               }}
               closeTimeoutMS={600}
             >
-              <p>{value.detail.detailText}</p>
-              <p>modal</p>
-              <p>modal</p>
-              <p>modal</p>
-              <p>modal</p>
+              <div className="content__base__detail-info">
+                <h4>{value.title}</h4>
+                <p>{value.year}</p>
+                <p>{value.company}</p>
+                <p>
+                  <a href={value.detail.link}>{value.detail.link}</a>
+                </p>
+                <div className="content__base__detail-lang">
+                  {value.detail.langs.map((lang) => (
+                    <img
+                      key={lang.name}
+                      src={lang.img}
+                      className={lang.name}
+                      alt="言語"
+                    />
+                  ))}
+                </div>
+              </div>
+              <div className="content__base__detail-text">
+                <p>{value.detail.detailText}</p>
+              </div>
+              <div className="content__base__detail-img">
+                <img src={value.img} alt="画像" />
+              </div>
             </Modal>
           );
         })}
@@ -135,11 +154,30 @@ const Works = () => {
               }}
               closeTimeoutMS={600}
             >
-              <p>{value.detail.detailText}</p>
-              <p>modal</p>
-              <p>modal</p>
-              <p>modal</p>
-              <p>modal</p>
+              <div className="content__base__detail-info">
+                <h4>{value.title}</h4>
+                <p>{value.year}</p>
+                <p>{value.company}</p>
+                <p>
+                  <a href={value.detail.link}>{value.detail.link}</a>
+                </p>
+                <div className="content__base__detail-lang">
+                  {value.detail.langs.map((lang) => (
+                    <img
+                      key={lang.name}
+                      src={lang.img}
+                      className={lang.name}
+                      alt="言語"
+                    />
+                  ))}
+                </div>
+              </div>
+              <div className="content__base__detail-text">
+                <p>{value.detail.detailText}</p>
+              </div>
+              <div className="content__base__detail-img">
+                <img src={value.img} alt="画像" />
+              </div>
             </Modal>
           );
         })}
@@ -195,11 +233,30 @@ const Works = () => {
               }}
               closeTimeoutMS={600}
             >
-              <p>{value.detail.detailText}</p>
-              <p>modal</p>
-              <p>modal</p>
-              <p>modal</p>
-              <p>modal</p>
+              <div className="content__base__detail-info">
+                <h4>{value.title}</h4>
+                <p>{value.year}</p>
+                <p>{value.company}</p>
+                <p>
+                  <a href={value.detail.link}>{value.detail.link}</a>
+                </p>
+                <div className="content__base__detail-lang">
+                  {value.detail.langs.map((lang) => (
+                    <img
+                      key={lang.name}
+                      src={lang.img}
+                      className={lang.name}
+                      alt="言語"
+                    />
+                  ))}
+                </div>
+              </div>
+              <div className="content__base__detail-text">
+                <p>{value.detail.detailText}</p>
+              </div>
+              <div className="content__base__detail-img">
+                <img src={value.img} alt="画像" />
+              </div>
             </Modal>
           );
         })}
