@@ -1,0 +1,45 @@
+.skill {
+  &__list {
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    margin-bottom: 30px;
+
+    h4 {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__title {
+    font-size: 25px;
+  }
+
+  &__lang {
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      
+      img {
+        width: 30px;
+        margin-right: 15px;
+      }
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      padding: 5px 15px;
+      border-radius: 10px;
+      background: #ebebeb;
+      width: fit-content;
+    }
+  }
+
+  &__github {
+    img {
+      width: 100%;
+    }
+  }
+}
