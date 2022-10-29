@@ -12,11 +12,12 @@ import gatsbyCloud from "../../images/lang/gatsby-cloud.svg";
 import mui from "../../images/lang/material-ui.svg";
 import php from "../../images/lang/php.svg";
 import laravel from "../../images/lang/laravel.svg";
-import codeigniter from "../../images/lang/codeigniter.svg"
+import codeigniter from "../../images/lang/codeigniter.svg";
 import wordpress from "../../images/lang/wordpress.svg";
 import mysql from "../../images/lang/mysql.svg";
 import gas from "../../images/lang/google_script_apps_logo_icon.svg";
 import heroku from "../../images/lang/heroku.svg";
+import github from "../../images/lang/github.svg"
 
 export const Frontend = [
   {
@@ -126,5 +127,10 @@ export const Other = [
     lv: "2",
     img: gatsbyCloud,
     width: "45px",
+  },
+  {
+    name: "Github",
+    lv: "5",
+    img: github,
   },
 ];
