@@ -16,7 +16,7 @@ const Main = () => {
         <Contact></Contact>
       </main>
       <footer>
-        <p>created by taic-dev</p>
+        <p style={{textAlign: "center"}}>created by taic-dev</p>
       </footer>
     </div>
   );
