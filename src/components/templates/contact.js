@@ -15,7 +15,7 @@ const Contact = () => {
           その他お問い合わせはこちらのボタンからよろしくお願いします。
         </p>
         <div className="btn">
-          <Button variant="contained" href="https://forms.gle/B4Hvpu27CMznz9VQA" target="_blank">Contained</Button>
+          <Button variant="contained" href="https://forms.gle/B4Hvpu27CMznz9VQA" target="_blank">お問い合わせはこちら</Button>
         </div>
       </div>
     </section>
