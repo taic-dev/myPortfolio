@@ -1,0 +1,22 @@
+.contact {
+  &__text {
+    margin-right: 15px;
+    text-align: center;
+  }
+
+  &__btn {
+    margin-right: 15px;
+    a {
+      display: block;
+      width: fit-content;
+      margin: 70px auto;
+      padding: 10px 50px;
+      color: #fff;
+      background: #000;
+      font-size: 15px;
+      &:hover {
+        background: #3a3a3a;
+      }
+    }
+  }
+}

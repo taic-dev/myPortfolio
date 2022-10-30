@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 p {
   line-height: 1.5;
 }
@@ -7,6 +11,11 @@ p {
   max-width: 1200px;
   margin: auto;
   padding-top: 150px;
+  @media screen and (max-width: 900px) {
+    margin-top: 50px;
+    padding: 0;
+    flex-direction: column;
+  }
 }
 
 .top {
@@ -17,10 +26,13 @@ p {
   section {
     margin-bottom: 50px;
   }
+
+  @media screen and (max-width: 900px) {
+    max-width: 100%;
+  }
 }
 
 .main {
-  margin-right: 15px;
 }
 
 .sidebar {
@@ -49,10 +61,10 @@ p {
       counter-reset: count 0;
       padding: 50px 0 0 50px;
 
-      li{
-          font-size: 20px;
-          width: fit-content;
-          margin-bottom: 25px;
+      li {
+        font-size: 20px;
+        width: fit-content;
+        margin-bottom: 25px;
       }
 
       li:before {
@@ -60,11 +72,18 @@ p {
         counter-increment: count 1;
       }
     }
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    display: none;
   }
 }
 
-.btn{
-  a{
+.btn {
+  a {
     display: block;
     width: fit-content;
     margin: 70px auto;
@@ -72,7 +91,7 @@ p {
     color: #fff;
     background: #000;
     font-size: 15px;
-    &:hover{
+    &:hover {
       background: #3a3a3a;
     }
   }

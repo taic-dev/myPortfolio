@@ -1,13 +1,16 @@
 .top {
   .headline {
     h2 {
-      font-size: clamp(20px, 5.3vw, 40px);
+      font-size: 40px;
     }
 
     span {
       display: block;
       font-weight: bold;
       margin: 15px 0 40px 0;
+    }
+    @media screen and (max-width: 900px) {
+      margin: 0 15px;
     }
   }
 
@@ -31,6 +34,9 @@
         border-radius: 5px;
         content: "";
       }
+    }
+    @media screen and (max-width: 450px) {
+      margin-left: 15px;
     }
   }
 }

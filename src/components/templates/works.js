@@ -26,9 +26,17 @@ const Works = () => {
       <div className="content">
         <h3>HP</h3>
         <Swiper
+          breakpoints={{
+            600: {
+              slidesPerView: 1.8,
+            },
+            1100: {
+              slidesPerView: 2.5,
+            },
+          }}
+          slidesPerView={1.2}
           className={Styles.works__list}
           spaceBetween={30}
-          slidesPerView={2.5}
           modules={[Pagination, Autoplay]}
           autoplay={{
             delay: 3500,
@@ -105,9 +113,17 @@ const Works = () => {
 
         <h3>WEBSITE</h3>
         <Swiper
+          breakpoints={{
+            600: {
+              slidesPerView: 1.8,
+            },
+            1100: {
+              slidesPerView: 2.5,
+            },
+          }}
+          slidesPerView={1.2}
           className={Styles.works__list}
           spaceBetween={30}
-          slidesPerView={2.5}
           modules={[Pagination, Autoplay]}
           autoplay={{
             delay: 3500,
@@ -184,9 +200,17 @@ const Works = () => {
 
         <h3>Other</h3>
         <Swiper
+          breakpoints={{
+            600: {
+              slidesPerView: 1.8,
+            },
+            1100: {
+              slidesPerView: 2.5,
+            },
+          }}
+          slidesPerView={1.2}
           className={Styles.works__list}
           spaceBetween={30}
-          slidesPerView={2.5}
           modules={[Pagination, Autoplay]}
           autoplay={{
             delay: 3500,
