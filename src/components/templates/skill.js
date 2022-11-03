@@ -5,7 +5,7 @@ import html from "../../images/lang/html.svg";
 
 const Skill = () => {
   return (
-    <section className="skill">
+    <section id="skill" className="skill">
       <div className="headline">
         <h2>Skill</h2>
         <span>スキルセット</span>

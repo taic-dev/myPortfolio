@@ -6,7 +6,7 @@ import SendIcon from '@mui/icons-material/Send';
 
 const Contact = () => {
   return (
-    <section className={Styles.contact}>
+    <section id="contact" className={Styles.contact}>
       <div className="headline">
         <h2>Contact</h2>
         <span>お問い合わせ</span>

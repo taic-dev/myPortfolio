@@ -18,7 +18,7 @@ const Works = () => {
   console.log(modalOpen);
 
   return (
-    <section className="works">
+    <section id="works" className="works">
       <div className="headline">
         <h2>Works</h2>
         <span>制作物</span>

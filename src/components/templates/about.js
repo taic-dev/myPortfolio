@@ -5,7 +5,7 @@ import { Button } from "@mui/material";
 
 const About = () => {
   return (
-    <section className={Styles.about}>
+    <section id="about" className={Styles.about}>
       <div className="headline">
         <h2>About</h2>
         <span>私について</span>
