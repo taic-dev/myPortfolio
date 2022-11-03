@@ -17,7 +17,7 @@ import wordpress from "../../images/lang/wordpress.svg";
 import mysql from "../../images/lang/mysql.svg";
 import gas from "../../images/lang/google_script_apps_logo_icon.svg";
 import heroku from "../../images/lang/heroku.svg";
-import github from "../../images/lang/github.svg"
+import github from "../../images/lang/github.svg";
 
 export const Frontend = [
   {
@@ -86,11 +86,6 @@ export const Backend = [
     img: codeigniter,
   },
   {
-    name: "WordPress",
-    lv: "7",
-    img: wordpress,
-  },
-  {
     name: "Node.js",
     lv: "3",
     img: nodejs,
@@ -105,6 +100,11 @@ export const Backend = [
 ];
 
 export const Other = [
+  {
+    name: "WordPress",
+    lv: "7",
+    img: wordpress,
+  },
   {
     name: "MySQL",
     lv: "5",
