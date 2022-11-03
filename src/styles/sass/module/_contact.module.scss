@@ -1,11 +1,25 @@
 .contact {
   &__text {
+    margin-bottom: 50px;
     margin-right: 15px;
-    text-align: center;
+  }
+
+  &__wrapper {
+    max-width: 100%;
+
+    form{
+        margin-right: 15px;
+    }
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
   }
 
   &__btn {
     margin-right: 15px;
+    text-align: center;
     a {
       display: block;
       width: fit-content;
