@@ -1,3 +1,9 @@
+import Setouchi from "../../images/works/setouchi.png"
+import Confidence from "../../images/works/confidence.png"
+import Remaker from "../../images/works/remaker.png"
+import Tuda from "../../images/works/tuda.png"
+import Portfolio from "../../images/works/portfolio.png"
+
 import Demo from "../../images/demo.png";
 import html from "../../images/lang/html.svg";
 import css from "../../images/lang/css.svg";
@@ -13,12 +19,13 @@ import mui from "../../images/lang/material-ui.svg";
 import wordpress from "../../images/lang/wordpress.svg";
 import mysql from "../../images/lang/mysql.svg";
 import gas from "../../images/lang/google_script_apps_logo_icon.svg";
+import slack from "../../images/lang/slack.svg";
 
 export const WorksHP = [
   {
     id: 1,
     name: "Confidence",
-    img: Demo,
+    img: Confidence,
     title: "PersonalGym Confidence HP制作",
     text: "1テキストテキストテキストテキスト",
     year: "2022",
@@ -54,7 +61,7 @@ export const WorksHP = [
   {
     id: 2,
     name: "Remaker",
-    img: Demo,
+    img: Remaker,
     title: "株式会社 Remaker 様",
     text: "2テキストテキストテキストテキスト",
     year: "2022",
@@ -90,7 +97,7 @@ export const WorksHP = [
   {
     id: 3,
     name: "Tuda",
-    img: Demo,
+    img: Tuda,
     title: "株式会社ツダ企画 HP制作",
     text: "3テキストテキストテキストテキスト",
     year: "2021",
@@ -126,7 +133,7 @@ export const WorksHP = [
   {
     id: 4,
     name: "Setouchi",
-    img: Demo,
+    img: Setouchi,
     title: "有限会社せとうち通商 HP制作",
     text: "3テキストテキストテキストテキスト",
     year: "2021",
@@ -158,7 +165,7 @@ export const WorksHP = [
   {
     id: 5,
     name: "Portfolio",
-    img: Demo,
+    img: Portfolio,
     title: "ポートフォリオサイト",
     text: "ポートフォリオサイトです〜〜〜",
     year: "2022",
@@ -378,7 +385,7 @@ export const Other = [
     year: "2022",
     company: "個人制作",
     detail: {
-      link: "",
+      link: "https://app-typing-game.herokuapp.com/",
       langs: [
         {
           name: "html",
@@ -406,7 +413,7 @@ export const Other = [
     year: "2021",
     company: "個人制作",
     detail: {
-      link: "",
+      link: "https://music-player-taic-dev.herokuapp.com/",
       langs: [
         {
           name: "html",
@@ -467,6 +474,10 @@ export const Other = [
         {
           name: "gas",
           img: gas,
+        },
+        {
+          name: "slack",
+          img: slack,
         },
       ],
       detailText:
