@@ -1,8 +1,19 @@
+// HP
 import Setouchi from "../../images/works/setouchi.png"
 import Confidence from "../../images/works/confidence.png"
 import Remaker from "../../images/works/remaker.png"
 import Tuda from "../../images/works/tuda.png"
 import Portfolio from "../../images/works/portfolio.png"
+// WEB site
+import Hearbvest from  "../../images/works/hearbvest.png"
+import Micropost from "../../images/works/micropost.png"
+import NewsApp from "../../images/works/NewsApp.png"
+import QuoteApp from "../../images/works/quote-table.png"
+import ReactWeather from "../../images/works/react-weather.png"
+// Other
+import TypingGame from "../../images/works/typing-game.png"
+import MusicPlayer from "../../images/works/music-player.png"
+import GASlack from "../../images/works/gaslack.png"
 
 import Demo from "../../images/demo.png";
 import html from "../../images/lang/html.svg";
@@ -204,7 +215,7 @@ export const WorksWEBSITE = [
   {
     id: 1,
     name: "Hearbvest",
-    img: Demo,
+    img: Hearbvest,
     title: "Hearbvest フロントエンド開発",
     text: "1テキストテキストテキストテキスト",
     year: "2021",
@@ -232,7 +243,7 @@ export const WorksWEBSITE = [
   {
     id: 2,
     name: "Micropost",
-    img: Demo,
+    img: Micropost,
     title: "Micropost -ひとこと掲示板-",
     text: "2テキストテキストテキストテキスト",
     year: "2022",
@@ -272,7 +283,7 @@ export const WorksWEBSITE = [
   {
     id: 3,
     name: "NewsApp",
-    img: Demo,
+    img: NewsApp,
     title: "News App",
     text: "3テキストテキストテキストテキスト",
     year: "2020",
@@ -304,7 +315,7 @@ export const WorksWEBSITE = [
   {
     id: 4,
     name: "QuoteApp",
-    img: Demo,
+    img: QuoteApp,
     title: "見積もり書作成 App",
     text: "3テキストテキストテキストテキスト",
     year: "2020",
@@ -340,7 +351,7 @@ export const WorksWEBSITE = [
   {
     id: 5,
     name: "WeatherApp",
-    img: Demo,
+    img: ReactWeather,
     title: "お天気 App",
     text: "3テキストテキストテキストテキスト",
     year: "2020",
@@ -379,7 +390,7 @@ export const Other = [
   {
     id: 1,
     name: "TypingGame",
-    img: Demo,
+    img: TypingGame,
     title: "タイピングゲーム -JS関数編-",
     text: "1テキストテキストテキストテキスト",
     year: "2022",
@@ -407,7 +418,7 @@ export const Other = [
   {
     id: 2,
     name: "MusicPlayer",
-    img: Demo,
+    img: MusicPlayer,
     title: "Music Player",
     text: "2テキストテキストテキストテキスト",
     year: "2021",
@@ -434,37 +445,9 @@ export const Other = [
   },
   {
     id: 3,
-    name: "Tetris",
-    img: Demo,
-    title: "テトリス -Tetris-",
-    text: "3テキストテキストテキストテキスト",
-    year: "2020",
-    company: "個人制作",
-    detail: {
-      link: "",
-      langs: [
-        {
-          name: "html",
-          img: html,
-        },
-        {
-          name: "css",
-          img: css,
-        },
-        {
-          name: "javascript",
-          img: javascript,
-        },
-      ],
-      detailText:
-        "テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト",
-    },
-  },
-  {
-    id: 4,
     name: "GAS",
-    img: Demo,
-    title: "GASを使用した業務効率化",
+    img: GASlack,
+    title: "GASとSlackを使用した業務効率化",
     text: "3テキストテキストテキストテキスト",
     year: "2020",
     company: "個人制作",
