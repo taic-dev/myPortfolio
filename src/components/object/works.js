@@ -4,6 +4,8 @@ import Confidence from "../../images/works/confidence.png"
 import Remaker from "../../images/works/remaker.png"
 import Tuda from "../../images/works/tuda.png"
 import Portfolio from "../../images/works/portfolio.png"
+import GogoIsland from "../../images/works/gogoisland.png"
+
 // WEB site
 import Hearbvest from  "../../images/works/hearbvest.png"
 import Micropost from "../../images/works/micropost.png"
@@ -15,7 +17,7 @@ import TypingGame from "../../images/works/typing-game.png"
 import MusicPlayer from "../../images/works/music-player.png"
 import GASlack from "../../images/works/gaslack.png"
 
-import Demo from "../../images/demo.png";
+// lang
 import html from "../../images/lang/html.svg";
 import css from "../../images/lang/css.svg";
 import sass from "../../images/lang/sass.svg";
@@ -35,6 +37,46 @@ import slack from "../../images/lang/slack.svg";
 export const WorksHP = [
   {
     id: 1,
+    name: "GoGoIsland",
+    img: GogoIsland,
+    title: "GoGoIsland HP制作",
+    text: "1テキストテキストテキストテキスト",
+    year: "2022",
+    company: "GoGoIsland 様",
+    detail: {
+      link: "https://",
+      langs: [
+        {
+          name: "html",
+          img: html,
+        },
+        {
+          name: "css",
+          img: css,
+        },
+        {
+          name: "sass",
+          img: sass,
+        },
+        {
+          name: "javascript",
+          img: javascript,
+        },
+        {
+          name: "react",
+          img: react,
+        },
+        {
+          name: "gatsby",
+          img: gatsby,
+        },
+      ],
+      detailText:
+        "GoGoIslandテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキストパーソナルテキスト",
+    },
+  },
+  {
+    id: 2,
     name: "Confidence",
     img: Confidence,
     title: "PersonalGym Confidence HP制作",
@@ -70,7 +112,7 @@ export const WorksHP = [
     },
   },
   {
-    id: 2,
+    id: 3,
     name: "Remaker",
     img: Remaker,
     title: "株式会社 Remaker 様",
@@ -106,7 +148,7 @@ export const WorksHP = [
     },
   },
   {
-    id: 3,
+    id: 4,
     name: "Tuda",
     img: Tuda,
     title: "株式会社ツダ企画 HP制作",
@@ -142,7 +184,7 @@ export const WorksHP = [
     },
   },
   {
-    id: 4,
+    id: 5,
     name: "Setouchi",
     img: Setouchi,
     title: "有限会社せとうち通商 HP制作",
@@ -174,7 +216,7 @@ export const WorksHP = [
     },
   },
   {
-    id: 5,
+    id: 6,
     name: "Portfolio",
     img: Portfolio,
     title: "ポートフォリオサイト",
