@@ -30,3 +30,11 @@
     }
   }
 }
+
+.swiper{
+  &__pagination{
+    position: relative !important;
+    top: 4px !important;
+    left: 8px !important;
+  }
+}
