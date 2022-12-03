@@ -2,13 +2,12 @@ import * as React from "react";
 import { Link } from "gatsby";
 import Modal from "react-modal";
 import * as Styles from "../../styles/sass/module/_works.module.scss";
-import Img from "../../images/demo.png";
-
 import { WorksHP, WorksWEBSITE, Other } from "../object/works";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper";
 import "swiper/scss";
+import 'swiper/css/pagination';
 
 Modal.setAppElement("#___gatsby");
 
@@ -38,6 +37,7 @@ const Works = () => {
           className={Styles.works__list}
           spaceBetween={30}
           modules={[Pagination, Autoplay]}
+          pagination={{ clickable: true ,el: "#hp-pagination"}}
           autoplay={{
             delay: 3500,
             disableOnInteraction: false,
@@ -64,6 +64,7 @@ const Works = () => {
               </>
             );
           })}
+          <div id="hp-pagination" className={Styles.swiper__pagination}></div>
         </Swiper>
 
         {WorksHP.map((value) => {
@@ -125,6 +126,7 @@ const Works = () => {
           className={Styles.works__list}
           spaceBetween={30}
           modules={[Pagination, Autoplay]}
+          pagination={{ clickable: true ,el: "#website-pagination"}}
           autoplay={{
             delay: 3500,
             disableOnInteraction: false,
@@ -151,6 +153,7 @@ const Works = () => {
               </SwiperSlide>
             );
           })}
+          <div id="website-pagination" className={Styles.swiper__pagination}></div>
         </Swiper>
 
         {WorksWEBSITE.map((value) => {
@@ -212,6 +215,7 @@ const Works = () => {
           className={Styles.works__list}
           spaceBetween={30}
           modules={[Pagination, Autoplay]}
+          pagination={{ clickable: true ,el: "#other-pagination"}}
           autoplay={{
             delay: 3500,
             disableOnInteraction: false,
@@ -238,6 +242,7 @@ const Works = () => {
               </SwiperSlide>
             );
           })}
+          <div id="other-pagination" className={Styles.swiper__pagination}></div>
         </Swiper>
 
         {Other.map((value) => {
