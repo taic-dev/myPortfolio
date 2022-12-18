@@ -53,17 +53,17 @@ export const Frontend = [
   },
   {
     name: "React",
-    lv: "3",
+    lv: "4",
     img: react,
   },
   {
     name: "Gatsby",
-    lv: "3",
+    lv: "4",
     img: gatsby,
   },
   {
     name: "Material-UI",
-    lv: "3",
+    lv: "4",
     img: mui,
   },
 ];

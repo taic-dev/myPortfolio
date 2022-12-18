@@ -47,6 +47,10 @@
 
     overflow-y: scroll;
 
+    @media screen and (max-width: 600px) {
+      padding: 5%;
+    }
+
     &__detail {
       &-info {
         font-family: auto;
@@ -60,6 +64,12 @@
           padding-bottom: 25px;
           line-height: 1.5;
 
+          @media screen and (max-width: 600px) {
+            font-size: clamp(20px, 5.7vw, 30px);
+            margin: 20px 0;
+            padding-bottom: 15px;
+          }
+
           &::after {
             position: absolute;
             left: 0;
@@ -68,11 +78,18 @@
             height: 3px;
             background: #000;
             content: "";
+
+            @media screen and (max-width: 600px) {
+              width: 10%;
+            }
           }
         }
 
         p {
           margin-bottom: 10px;
+          @media screen and (max-width: 600px) {
+            font-size: clamp(12px, 3.7vw, 16px);
+          }
         }
 
         a {
@@ -88,8 +105,18 @@
         align-items: center;
         margin-top: 30px;
 
+        @media screen and (max-width: 600px) {
+          gap: 15px;
+        }
+
         img {
           width: 35px;
+          transition: 0.5s;
+
+          @media screen and (max-width: 600px) {
+            width: 27px;
+            transition: 0.5s;
+          }
 
           &:first-child {
             margin: 0;
@@ -99,27 +126,51 @@
         // lang
         .sass{
           width: 50px;
+          @media screen and (max-width: 600px) {
+            width: 42px;
+          }
         }
         .jquery {
           width: 100px;
+          @media screen and (max-width: 600px) {
+            width: 92px;
+          }
         }
         .nodejs{
           width: 70px;
+          @media screen and (max-width: 600px) {
+            width: 62px;
+          }
         }
         .express{
           width: 100px;
+          @media screen and (max-width: 600px) {
+            width: 92px;
+          }
         }
         .react{
           width: 40px;
+          @media screen and (max-width: 600px) {
+            width: 32px;
+          }
         }
         .gatsbycloud{
           width: 50px;
+          @media screen and (max-width: 600px) {
+            width: 42px;
+          }
         }
         .mysql{
           width: 60px;
+          @media screen and (max-width: 600px) {
+            width: 52px;
+          }
         }
         .gas{
           width: 50px;
+          @media screen and (max-width: 600px) {
+            width: 42px;
+          }
         }
       }
 
@@ -146,6 +197,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
+    transition: 0.5s;
+
+    @media screen and (max-width: 900px) {
+      width: 90%;
+      transition: 0.5s;
+    }
   }
 
   &__before {

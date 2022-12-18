@@ -44,7 +44,7 @@ export const WorksHP = [
     year: "2022",
     company: "GoGoIsland 様",
     detail: {
-      link: "https://",
+      link: "https://gogo-island.com",
       langs: [
         {
           name: "html",
