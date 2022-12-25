@@ -1,7 +1,8 @@
 import * as React from "react";
 import * as Styles from "../../styles/sass/module/_about.module.scss";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import { Button } from "@mui/material";
+import Github from "../../images/lang/github.svg";
+import Zenn from "../../images/lang/zenn.png";
+import { Button, Link } from "@mui/material";
 
 const About = () => {
   return (
@@ -33,9 +34,13 @@ const About = () => {
             <tr>
               <td>-SNS</td>
               <td>
-                <Button target="_blank" href="https://github.com/taic-dev/" style={{ padding: "0" }}>
-                  <GitHubIcon style={{ fontSize: "50px", color: "#000" }} />
+                <Button target="_blank" href="https://github.com/taic-dev/" style={{ padding: "0", justifyContent: "start" }}>
+                  <img src={Github} style={{ width: "40px" }} />
                 </Button>
+                <Button target="_blank" href="https://zenn.dev/taic_dev" style={{ padding: "0" }}>
+                  <img src={Zenn} alt="Zenn" style={{ width: "100px" }} />
+                </Button>
+                
               </td>
             </tr>
           </tbody>
