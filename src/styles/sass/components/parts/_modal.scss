@@ -182,11 +182,14 @@
 
       &-github {
         width: fit-content;
-        border-bottom: solid #5992fe 1px;
         
         a{
+          color: #000;
           display: flex;
           align-items: center;
+          border: solid #000 1px;
+          border-radius: 15px;
+          padding: 3px 15px;
         }
         
         span{
@@ -196,7 +199,6 @@
 
         img{
           width: 20px;
-          padding-bottom: 3px;
         }
       }
 
