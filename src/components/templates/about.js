@@ -17,7 +17,7 @@ const About = () => {
           <tbody>
             <tr>
               <td>-Name</td>
-              <td>大本 泰史（Ohmoto Taishi）</td>
+              <td>Taishi Ohmoto（大本 泰史）</td>
             </tr>
             <tr>
               <td>-Date of birth</td>

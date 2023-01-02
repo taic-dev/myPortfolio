@@ -15,7 +15,7 @@ import ReactWeather from "../../images/works/react-weather.png"
 // Other
 import TypingGame from "../../images/works/typing-game.png"
 import MusicPlayer from "../../images/works/music-player.png"
-import GASlack from "../../images/works/gaslack.png"
+import GAS from "../../images/works/GoogleAppScript.png"
 
 // lang
 import html from "../../images/lang/html.svg";
@@ -34,6 +34,10 @@ import wordpress from "../../images/lang/wordpress.svg";
 import mysql from "../../images/lang/mysql.svg";
 import gas from "../../images/lang/google_script_apps_logo_icon.svg";
 import slack from "../../images/lang/slack.svg";
+import trello from "../../images/lang/trello.svg";
+import gmail from "../../images/lang/gmail.svg";
+import gcalendar from "../../images/lang/g-calendar.svg";
+import spreadsheet from "../../images/lang/spreadsheet.svg";
 import github from "../../images/lang/github.svg";
 
 export const WorksHP = [
@@ -465,9 +469,6 @@ export const WorksWEBSITE = [
 
         デフォルトは東京の天気を取得していますが、Locationのページで調べたい都道府県名を入力すると変更されます。
         Open-Meteoや都道府県や市町村、緯度/経度を取得できるAPIを使用して情報を取得しています。
-
-
-
         `,
     },
   },
@@ -479,9 +480,10 @@ export const Other = [
     name: "TypingGame",
     img: TypingGame,
     title: "タイピングゲーム -JS関数編-",
-    text: "1テキストテキストテキストテキスト",
+    text: "Vanilla JS を使用して制作したタイピングゲームです",
     year: "2022",
     company: "個人制作",
+    github: "https://github.com/taic-dev/typingGame_JavaScript",
     detail: {
       link: "https://app-typing-game.herokuapp.com/",
       langs: [
@@ -499,7 +501,12 @@ export const Other = [
         },
       ],
       detailText:
-        "テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト",
+        `タイポミスを無くしなるべく早くコードを書くスキルは、エンジニアにとって必要不可欠な能力です。
+        JavaScriptの学習を始めたばかりの方は、関数名が長すぎて苦戦されている方が多いのではないでしょうか？
+        （自分もその1人でした。）そんな苦戦を強いられている駆け出しJSerのために、JavaScriptの関数をタイピング練習できるゲームを制作しました。
+        制限時間は60秒で、タイピング完了（success）とタイピングミス（typo）をカウントするようになっています。
+        ※Game Startをした瞬間に音がなるため注意してください！
+        `,
     },
   },
   {
@@ -507,9 +514,10 @@ export const Other = [
     name: "MusicPlayer",
     img: MusicPlayer,
     title: "Music Player",
-    text: "2テキストテキストテキストテキスト",
+    text: "Vanilla JS を使用して制作したMusic Playerです",
     year: "2021",
     company: "個人制作",
+    github: "https://github.com/taic-dev/Music-Player",
     detail: {
       link: "https://music-player-taic-dev.herokuapp.com/",
       langs: [
@@ -527,15 +535,20 @@ export const Other = [
         },
       ],
       detailText:
-        "テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト",
+        `僕は音楽鑑賞が好きでサブスクの音楽提供サービスのヘビーユーザーです。
+        日々サービスを使用している中で、音楽アプリって作れないのかな〜と思ったのが制作のきっかけです。
+        JavaScriptを使用して音楽を流せることを知り、限定4曲（フリー音楽素材）で再生できるMusic Playerを制作しました。
+        いつもなんとなく使っているMusic Playerですが、いざ自分が制作するとなると難しい機能ばかりで苦戦しました。
+        特にMusic Playerのツマミを引っ張って時間帯をずらすと、流れている音楽もその時間帯の内容に変更されるように実装することに苦戦した。
+        `,
     },
   },
   {
     id: 3,
     name: "GAS",
-    img: GASlack,
-    title: "GASとSlackを使用した業務効率化",
-    text: "3テキストテキストテキストテキスト",
+    img: GAS,
+    title: "GASを使用した業務効率化",
+    text: "GASと様々なサービスを紐付けて業務効率化を実施",
     year: "2020",
     company: "個人制作",
     detail: {
@@ -546,12 +559,33 @@ export const Other = [
           img: gas,
         },
         {
+          name: "gmail",
+          img: gmail,
+        },
+        {
+          name: "gcalendar",
+          img: gcalendar,
+        },
+        {
+          name: "spreadsheet",
+          img: spreadsheet,
+        },
+        {
           name: "slack",
           img: slack,
         },
+        {
+          name: "trello",
+          img: trello,
+        },
       ],
       detailText:
-        "テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト",
+        `GASの魅力を知ったのはJavaScriptでできていると知った時です。
+        ほぼ、JavaScriptの文法なので抵抗感なく使用することができました。
+        GASと掛け合わせて使用できるツールがたくさんあるのでGASの沼にどんどん浸かっていきました。
+        中でも力を入れたのは、業務の中で使用するGoogle関連のサービスやSlack、Trelloなどと掛け合わせた様々な業務効率化です。
+        事務タスクをすべてワンポチ（ボタンを1回クリック）で終わらせることを目標に日々開発に取り組んでいます。
+        `,
     },
   },
 ];

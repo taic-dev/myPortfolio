@@ -85,8 +85,8 @@
           }
         }
 
-        p {
-          margin-bottom: 10px;
+        li {
+          margin-bottom: 20px;
           @media screen and (max-width: 600px) {
             font-size: clamp(12px, 3.7vw, 16px);
           }
@@ -110,7 +110,7 @@
         }
 
         img {
-          width: 35px;
+          width: 30px;
           transition: 0.5s;
 
           @media screen and (max-width: 600px) {
@@ -124,8 +124,14 @@
         }
 
         // lang
+        .php{
+          width: 40px;
+          @media screen and (max-width: 600px) {
+            width: 42px;
+          }
+        }
         .sass{
-          width: 50px;
+          width: 40px;
           @media screen and (max-width: 600px) {
             width: 42px;
           }
@@ -171,6 +177,26 @@
           @media screen and (max-width: 600px) {
             width: 42px;
           }
+        }
+      }
+
+      &-github {
+        width: fit-content;
+        border-bottom: solid #5992fe 1px;
+        
+        a{
+          display: flex;
+          align-items: center;
+        }
+        
+        span{
+          display: block;
+          padding-left: 5px;
+        }
+
+        img{
+          width: 20px;
+          padding-bottom: 3px;
         }
       }
 

@@ -90,18 +90,12 @@ const Works = () => {
                   <img src={value.img} alt="画像" />
                 </div>
                 <h4>{value.title}</h4>
-                <ul style={{ display: "flex", alignItems: "center" }}>
-                  <li>
-                    <p>{value.year}</p>
-                    <p>{value.company}</p>
-                  </li>
-                  <li>
-                    {value.github && <a href={value.github} target="_blank" rel="noopener noreferrer"><img src={github} alt="Github アイコン" style={{ marginLeft: "30px", marginBottom: "10px" ,width: "40px" }} /></a>}
-                  </li>
+                <ul>
+                  <li>{value.year}</li>
+                  <li>{value.company}</li>
+                  {value.github && <li className="content__base__detail-github"><a href={value.github} target="_blank" rel="noopener noreferrer"><img src={github} alt="Github アイコン" /><span>Githubへ</span></a></li>}
+                  {value.detail.link && <li><a href={value.detail.link} target="_blank" rel="noopener noreferrer">{value.detail.link}</a></li>}
                 </ul>
-                <p>
-                  <a href={value.detail.link} target="_blank" rel="noopener noreferrer">{value.detail.link}</a>
-                </p>
                 <div className="content__base__detail-lang">
                   {value.detail.langs.map((lang) => (
                     <img
@@ -186,18 +180,12 @@ const Works = () => {
                   <img src={value.img} alt="画像" />
                 </div>
                 <h4>{value.title}</h4>
-                <ul style={{ display: "flex", alignItems: "center" }}>
-                  <li>
-                    <p>{value.year}</p>
-                    <p>{value.company}</p>
-                  </li>
-                  <li>
-                    {value.github && <a href={value.github} target="_blank" rel="noopener noreferrer"><img src={github} alt="Github アイコン" style={{ marginLeft: "30px", marginBottom: "10px" ,width: "40px" }} /></a>}
-                  </li>
+                <ul>
+                  <li>{value.year}</li>
+                  <li>{value.company}</li>
+                  {value.github && <li className="content__base__detail-github"><a href={value.github} target="_blank" rel="noopener noreferrer"><img src={github} alt="Github アイコン" /><span>Githubへ</span></a></li>}
+                  {value.detail.link && <li><a href={value.detail.link} target="_blank" rel="noopener noreferrer">{value.detail.link}</a></li>}
                 </ul>
-                <p>
-                  <a href={value.detail.link} target="_blank" rel="noopener noreferrer">{value.detail.link}</a>
-                </p>
                 <div className="content__base__detail-lang">
                   {value.detail.langs.map((lang) => (
                     <img
@@ -282,18 +270,12 @@ const Works = () => {
                   <img src={value.img} alt="画像" />
                 </div>
                 <h4>{value.title}</h4>
-                <ul style={{ display: "flex", alignItems: "center" }}>
-                  <li>
-                    <p>{value.year}</p>
-                    <p>{value.company}</p>
-                  </li>
-                  <li>
-                    {value.github && <a href={value.github} target="_blank" rel="noopener noreferrer"><img src={github} alt="Github アイコン" style={{ marginLeft: "30px", marginBottom: "10px" ,width: "40px" }} /></a>}
-                  </li>
+                <ul>
+                  <li>{value.year}</li>
+                  <li>{value.company}</li>
+                  {value.github && <li className="content__base__detail-github"><a href={value.github} target="_blank" rel="noopener noreferrer"><img src={github} alt="Github アイコン" /><span>Githubへ</span></a></li>}
+                  {value.detail.link && <li><a href={value.detail.link} target="_blank" rel="noopener noreferrer">{value.detail.link}</a></li>}
                 </ul>
-                <p>
-                  <a href={value.detail.link} target="_blank" rel="noopener noreferrer">{value.detail.link}</a>
-                </p>
                 <div className="content__base__detail-lang">
                   {value.detail.langs.map((lang) => (
                     <img
