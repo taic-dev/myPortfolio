@@ -55,8 +55,8 @@ const Works = () => {
                   <img src={value.img} alt="画像" />
                   <div className={Styles.works__desc}>
                     <h4>{value.title}</h4>
-                    <p>{value.text}</p>
-                    <span>
+                    <p className="sans-jp">{value.text}</p>
+                    <span className="sans-jp">
                       {value.year} / {value.company}
                     </span>
                   </div>
@@ -85,11 +85,14 @@ const Works = () => {
               closeTimeoutMS={600}
             >
               <div className="content__base__detail-info">
+                <div className="content__base__detail-img">
+                  <img src={value.img} alt="画像" />
+                </div>
                 <h4>{value.title}</h4>
                 <p>{value.year}</p>
                 <p>{value.company}</p>
                 <p>
-                  <a href={value.detail.link}>{value.detail.link}</a>
+                  <a href={value.detail.link} target="_blank" rel="noopener noreferrer">{value.detail.link}</a>
                 </p>
                 <div className="content__base__detail-lang">
                   {value.detail.langs.map((lang) => (
@@ -103,10 +106,7 @@ const Works = () => {
                 </div>
               </div>
               <div className="content__base__detail-text">
-                <p>{value.detail.detailText}</p>
-              </div>
-              <div className="content__base__detail-img">
-                <img src={value.img} alt="画像" />
+                <p className="sans-jp">{value.detail.detailText}</p>
               </div>
             </Modal>
           );
@@ -144,8 +144,8 @@ const Works = () => {
                   <img src={value.img} alt="画像" />
                   <div className={Styles.works__desc}>
                     <h4>{value.title}</h4>
-                    <p>{value.text}</p>
-                    <span>
+                    <p className="sans-jp">{value.text}</p>
+                    <span className="sans-jp">
                       {value.year} / {value.company}
                     </span>
                   </div>
@@ -174,11 +174,14 @@ const Works = () => {
               closeTimeoutMS={600}
             >
               <div className="content__base__detail-info">
+                <div className="content__base__detail-img">
+                  <img src={value.img} alt="画像" />
+                </div>
                 <h4>{value.title}</h4>
                 <p>{value.year}</p>
                 <p>{value.company}</p>
                 <p>
-                  <a href={value.detail.link}>{value.detail.link}</a>
+                  <a href={value.detail.link} target="_blank" rel="noopener noreferrer">{value.detail.link}</a>
                 </p>
                 <div className="content__base__detail-lang">
                   {value.detail.langs.map((lang) => (
@@ -192,16 +195,13 @@ const Works = () => {
                 </div>
               </div>
               <div className="content__base__detail-text">
-                <p>{value.detail.detailText}</p>
-              </div>
-              <div className="content__base__detail-img">
-                <img src={value.img} alt="画像" />
+                <p className="sans-jp">{value.detail.detailText}</p>
               </div>
             </Modal>
           );
         })}
 
-        <h3>Other</h3>
+        <h3>OTHER</h3>
         <Swiper
           breakpoints={{
             600: {
@@ -233,8 +233,8 @@ const Works = () => {
                   <img src={value.img} alt="画像" />
                   <div className={Styles.works__desc}>
                     <h4>{value.title}</h4>
-                    <p>{value.text}</p>
-                    <span>
+                    <p className="sans-jp">{value.text}</p>
+                    <span className="sans-jp">
                       {value.year} / {value.company}
                     </span>
                   </div>
@@ -263,11 +263,14 @@ const Works = () => {
               closeTimeoutMS={600}
             >
               <div className="content__base__detail-info">
+                <div className="content__base__detail-img">
+                  <img src={value.img} alt="画像" />
+                </div>
                 <h4>{value.title}</h4>
                 <p>{value.year}</p>
                 <p>{value.company}</p>
                 <p>
-                  <a href={value.detail.link}>{value.detail.link}</a>
+                  <a href={value.detail.link} target="_blank" rel="noopener noreferrer">{value.detail.link}</a>
                 </p>
                 <div className="content__base__detail-lang">
                   {value.detail.langs.map((lang) => (
@@ -281,10 +284,7 @@ const Works = () => {
                 </div>
               </div>
               <div className="content__base__detail-text">
-                <p>{value.detail.detailText}</p>
-              </div>
-              <div className="content__base__detail-img">
-                <img src={value.img} alt="画像" />
+                <p className="sans-jp">{value.detail.detailText}</p>
               </div>
             </Modal>
           );

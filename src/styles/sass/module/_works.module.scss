@@ -6,10 +6,17 @@
   &__item {
     padding-left: 2px;
     cursor: pointer;
+    opacity: 1;
+    transition: 0.5s;
 
     img {
       width: 100%;
       box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+    }
+
+    &:hover{
+      opacity: 0.7;
+      transition: 0.5s;
     }
   }
 
@@ -20,7 +27,7 @@
     }
 
     p {
-      font-size: 15px;
+      font-size: 13px;
     }
 
     span {
