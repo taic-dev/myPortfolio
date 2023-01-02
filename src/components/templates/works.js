@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 import Modal from "react-modal";
+import github from "../../images/lang/github.svg";
 import * as Styles from "../../styles/sass/module/_works.module.scss";
 import { WorksHP, WorksWEBSITE, Other } from "../object/works";
 
@@ -54,7 +55,7 @@ const Works = () => {
                 >
                   <img src={value.img} alt="画像" />
                   <div className={Styles.works__desc}>
-                    <h4>{value.title}</h4>
+                    <h4 className="sans-jp">{value.title}</h4>
                     <p className="sans-jp">{value.text}</p>
                     <span className="sans-jp">
                       {value.year} / {value.company}
@@ -89,8 +90,15 @@ const Works = () => {
                   <img src={value.img} alt="画像" />
                 </div>
                 <h4>{value.title}</h4>
-                <p>{value.year}</p>
-                <p>{value.company}</p>
+                <ul style={{ display: "flex", alignItems: "center" }}>
+                  <li>
+                    <p>{value.year}</p>
+                    <p>{value.company}</p>
+                  </li>
+                  <li>
+                    {value.github && <a href={value.github} target="_blank" rel="noopener noreferrer"><img src={github} alt="Github アイコン" style={{ marginLeft: "30px", marginBottom: "10px" ,width: "40px" }} /></a>}
+                  </li>
+                </ul>
                 <p>
                   <a href={value.detail.link} target="_blank" rel="noopener noreferrer">{value.detail.link}</a>
                 </p>
@@ -143,7 +151,7 @@ const Works = () => {
                 <Link to={value.link}>
                   <img src={value.img} alt="画像" />
                   <div className={Styles.works__desc}>
-                    <h4>{value.title}</h4>
+                    <h4 className="sans-jp">{value.title}</h4>
                     <p className="sans-jp">{value.text}</p>
                     <span className="sans-jp">
                       {value.year} / {value.company}
@@ -178,8 +186,15 @@ const Works = () => {
                   <img src={value.img} alt="画像" />
                 </div>
                 <h4>{value.title}</h4>
-                <p>{value.year}</p>
-                <p>{value.company}</p>
+                <ul style={{ display: "flex", alignItems: "center" }}>
+                  <li>
+                    <p>{value.year}</p>
+                    <p>{value.company}</p>
+                  </li>
+                  <li>
+                    {value.github && <a href={value.github} target="_blank" rel="noopener noreferrer"><img src={github} alt="Github アイコン" style={{ marginLeft: "30px", marginBottom: "10px" ,width: "40px" }} /></a>}
+                  </li>
+                </ul>
                 <p>
                   <a href={value.detail.link} target="_blank" rel="noopener noreferrer">{value.detail.link}</a>
                 </p>
@@ -232,7 +247,7 @@ const Works = () => {
                 <Link to={value.link}>
                   <img src={value.img} alt="画像" />
                   <div className={Styles.works__desc}>
-                    <h4>{value.title}</h4>
+                    <h4 className="sans-jp">{value.title}</h4>
                     <p className="sans-jp">{value.text}</p>
                     <span className="sans-jp">
                       {value.year} / {value.company}
@@ -267,8 +282,15 @@ const Works = () => {
                   <img src={value.img} alt="画像" />
                 </div>
                 <h4>{value.title}</h4>
-                <p>{value.year}</p>
-                <p>{value.company}</p>
+                <ul style={{ display: "flex", alignItems: "center" }}>
+                  <li>
+                    <p>{value.year}</p>
+                    <p>{value.company}</p>
+                  </li>
+                  <li>
+                    {value.github && <a href={value.github} target="_blank" rel="noopener noreferrer"><img src={github} alt="Github アイコン" style={{ marginLeft: "30px", marginBottom: "10px" ,width: "40px" }} /></a>}
+                  </li>
+                </ul>
                 <p>
                   <a href={value.detail.link} target="_blank" rel="noopener noreferrer">{value.detail.link}</a>
                 </p>
