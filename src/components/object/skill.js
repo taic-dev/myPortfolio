@@ -18,6 +18,7 @@ import mysql from "../../images/lang/mysql.svg";
 import gas from "../../images/lang/google_script_apps_logo_icon.svg";
 import heroku from "../../images/lang/heroku.svg";
 import github from "../../images/lang/github.svg";
+import docker from "../../images/lang/docker.svg";
 
 export const Frontend = [
   {
@@ -132,5 +133,10 @@ export const Other = [
     name: "Github",
     lv: "5",
     img: github,
+  },
+  {
+    name: "docker",
+    lv: "2",
+    img: docker,
   },
 ];
